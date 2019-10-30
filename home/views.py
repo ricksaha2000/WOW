@@ -14,6 +14,6 @@ def about_view(request):
 
 def contact_view(request):
     context = {
-        'title': 'Contact Us',
+        'title': 'Contact',
     }
     return render(request, 'home/contact.html', context)
