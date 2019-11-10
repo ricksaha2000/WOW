@@ -1,0 +1,22 @@
+{% extends "WOW/base.html" %}
+{% block content %}
+
+        <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px">
+            {{ event.title }} | {{ event.venue }} | {{ members }} Members<br>
+            <hr>
+            {{ event.description }}<br><br>
+            {{ event.time }} | {{ event.date }}<br><br>
+            Added on: {{ event.date_added }}<br>
+            <hr>
+            <form action="" method="POST">{% csrf_token %}
+                <input type="hidden" name="title" value="{{ event.title }}"/>
+                {% if not join %}
+                    <button type="submit" name="update" value="leave">LEAVE</button>
+                {% else %}
+                    <button type="submit" name="update" value="join">JOIN</button>
+                {% endif %}
+            </form>
+        </div>
+
+    <br>
+{% endblock %}
