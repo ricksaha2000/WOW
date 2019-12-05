@@ -39,7 +39,7 @@ def event_detail_view(request, event_id):
     members = Enrolled.objects.filter(event=event).count()
 
     context = {
-        "title": "Detail",
+        "title": event.title,
         "event": event,
         "join": join,
         "members": members,

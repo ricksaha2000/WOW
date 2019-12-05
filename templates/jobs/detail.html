@@ -1,0 +1,20 @@
+{% extends "WOW/base.html" %}
+{% block content %}
+
+            <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 700px">
+                <strong>{{ job.role }}</strong><br>
+                {{ job.address }}<br>
+                <small>{{ job.timestamp }}</small>
+                <hr>
+{#                {{ job.title }}<br><br>#}
+                <strong>Seniority Level:</strong> {{ job.seniority }}<br><br>
+                <strong>Employement Level:</strong> {{ job.employment }}<br><br>
+                <strong>Description:</strong> {{ job.description }}<br><br>
+                <strong>About Us:</strong> <a href=""{{ job.about_us }}>{{ job.about_us }}</a>
+
+                <hr>
+                <button type="submit" name="update" value="join">Apply</button>
+            </div>
+        <br>
+
+{% endblock %}

@@ -7,16 +7,17 @@ from django.conf.urls import url
 
 from home.views import home_view, about_view, contact_view
 from accounts.views import login_page, register_page
-from events import urls
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home_view, name="home"),
-    path('about/', about_view, name="about"),
-    path('contact/', contact_view, name="contact"),
-    path('login/', login_page, name="login"),
-    path('logout', LogoutView.as_view(), name="logout"),
-    path('registration/', register_page, name="register"),
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', home_view, name="home"),
+    url(r'^about/', about_view, name="about"),
+    url(r'^contact/', contact_view, name="contact"),
+    url(r'^login/', login_page, name="login"),
+    url(r'^logout', LogoutView.as_view(), name="logout"),
+    url(r'^registration/', register_page, name="register"),
     url(r'^events/', include(('events.urls', 'events'), namespace='events')),
+    url(r'^jobs/', include(('jobs.urls', 'jobs'), namespace='jobs')),
+    url(r'^communities/', include(('communities.urls', 'communities'), namespace='communities')),
 ]
 urlpatterns += staticfiles_urlpatterns()

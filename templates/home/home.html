@@ -2,5 +2,51 @@
 {% block content %}
 
     <h1>Welcome to home.</h1>
+    Jobs
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for job in jobs %}
+            <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                {{ job.role }}<br>
+                <hr>
+                {{ job.title }}<br><br>
+
+                {{ job.seniority }}<br><br>
+                {{ job.description|truncatechars:100 }}<br><br>
+                {{ job.timestamp }}
+                <hr>
+                <a role="button" href="/jobs/{{ job.id }}">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+    Events
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for event in events %}
+            <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                <strong>{{ event.title }}</strong> | {{ event.venue }} | {{ event.members }} Members<br>
+                <hr>
+                <strong>Description:</strong> {{ event.description|truncatechars:50 }}<br><br>
+                <strong>Time:</strong>{{ event.time }} | {{ event.date }}<br><br>
+                <strong>Added on:</strong> {{ event.date_added }}<br>
+                <hr>
+                <a role="button" href="/events/{{ event.id }}">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+    Communities
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for community in communities %}
+            <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                <strong>{{ community.title }} | By {{ community.user }}</strong>
+                <hr>
+                <strong>Description:</strong> {{ community.description|truncatechars:100 }}<br><br>
+                <strong>Added on:</strong> {{ community.timestamp }}<br><br>
+                <strong>{{ community.comments }} Comments</strong><br>
+                <strong>{{ community.likes }} Like</strong> <br><br>
+                <hr>
+                <a role="button" href="{{ community.id }}">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}
