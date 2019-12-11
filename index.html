@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+
+
+<!-- partial:index.partial.html -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+        
+    <link href="css/style2.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style3.css" rel="stylesheet">
+
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .carousel {
+            height: 60vh;
+        }
+
+        @media (max-width: 740px) {
+
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar navvy">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand waves-effect" href="/">
+                <strong class="blue-text">WOW</strong>
+            </a>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link waves-effect" href="/">Women Of The World
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <!--          {% if request.user.is_authenticated %}-->
+                    <li class="nav-item">
+                        <a href="{% url 'core:order-summary' %}" class="nav-link waves-effect">
+                            <span class="badge red z-depth-1 mr-1"></span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="clearfix d-none d-sm-inline-block"> About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+                            <span class="clearfix d-none d-sm-inline-block"> Logout </span>
+                        </a>
+                    </li>
+                    <!--          {% else %}-->
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="{% url 'account_login' %}">
+                            <span class="clearfix d-none d-sm-inline-block"> Sign In </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="{% url 'account_signup' %}">
+                            <span class="clearfix d-none d-sm-inline-block"> Signup </span>
+                        </a>
+                    </li>
+                    <!--          {% endif %}-->
+                </ul>
+            </div>
+            
+            
+            
+            
+
+        </div>
+    </nav>
+    </div>
+    
+    
+    
+    
+    
+    
+
+
+    <!-- Navbar -->
+
+    <!--Carousel Wrapper-->
+   
+        <!--/.Indicators-->
+
+        <!--Slides-->
+    <div class="row"></div>
+    <br><br><br>
+    
+       <div class="row hoho">
+                            <div class="container contain">
+                                <div class="row hehe">
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">COMMUNITIES</i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">JOBS</i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">MEETUPS</i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">EVENTS</i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">RESOURCES</i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a target="_blank" href="#" class="btn btn-outline-white custom">
+                                            <i class="black1">CONTACTS</i>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+  
+    
+    
+    
+    </div>
+
+<br><br>
+        
+    <main>
+        <div class="row">
+        <div id="target" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">Landon Hunt</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+
+            
+<!--
+         <div class="card profile-card-2 ">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+-->
+        
+               <div id="target1" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">JAY</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+               <div id="target2" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">SOMA</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+            
+        </div>
+       <div class="row">
+           
+           <div class="col-4">
+           
+           <div class="card profile-card-2 toggle">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           
+           
+           </div>
+                      <div class="col-4">
+
+           
+           <div class="card profile-card-2 toggle1">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">JAY</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           </div>
+           
+           
+           
+                      <div class="col-4">
+
+           <div class="card profile-card-2 toggle2">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">SOMA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+
+           </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        <br><br>
+        
+        
+        
+        <div class="row">
+        <div id="target3" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">Landon Hunt</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+
+            
+<!--
+         <div class="card profile-card-2 ">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+-->
+        
+               <div id="target4" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">JAY</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+               <div id="target5" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">SOMA</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+            
+        </div>
+       <div class="row">
+           
+           <div class="col-4">
+           
+           <div class="card profile-card-2 toggle3">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           
+           
+           </div>
+                      <div class="col-4">
+
+           
+           <div class="card profile-card-2 toggle4">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">JAY</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           </div>
+           
+           
+           
+                      <div class="col-4">
+
+           <div class="card profile-card-2 toggle5">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">SOMA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+
+           </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+                
+        
+        
+        <br><br>
+        
+        
+        
+        <div class="row">
+        <div id="target6" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">Landon Hunt</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+
+            
+<!--
+         <div class="card profile-card-2 ">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+-->
+        
+               <div id="target7" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">JAY</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+               <div id="target8" class="noshow">
+                     <div class="card profile-card-2 new1">
+
+        <div class="col-7">
+            
+            <div class="card-img-block new2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+            </div> 
+            
+            <div class="col-5 yoyo">
+                
+                
+                        <h5 class="card-title lol">SOMA</h5>
+                        <p class="card-text lolz">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                
+            
+            
+            
+            </div>
+            </div>
+        
+                    </div>
+            
+        </div>
+       <div class="row">
+           
+           <div class="col-4">
+           
+           <div class="card profile-card-2 toggle6">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">Landon Hunt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           
+           
+           </div>
+                      <div class="col-4">
+
+           
+           <div class="card profile-card-2 toggle7">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">JAY</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+           </div>
+           
+           
+           
+                      <div class="col-4">
+
+           <div class="card profile-card-2 toggle8">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">SOMA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+    
+
+           </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+                
+                
+
+
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+        <!--Call to action-->
+        <div class="pt-4">
+            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">
+                <i class="fas fa-download ml-2"></i>
+            </a>
+            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">
+                <i class="fas fa-graduation-cap ml-2"></i>
+            </a>
+        </div>
+        <!--/.Call to action-->
+
+        <hr class="my-4">
+
+        <!-- Social icons -->
+        <div class="pb-4">
+            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+                <i class="fab fa-facebook-f mr-3"></i>
+            </a>
+
+            <a href="https://twitter.com/MDBootstrap" target="_blank">
+                <i class="fab fa-twitter mr-3"></i>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+                <i class="fab fa-youtube mr-3"></i>
+            </a>
+
+            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+                <i class="fab fa-google-plus-g mr-3"></i>
+            </a>
+
+            <a href="https://dribbble.com/mdbootstrap" target="_blank">
+                <i class="fab fa-dribbble mr-3"></i>
+            </a>
+
+            <a href="https://pinterest.com/mdbootstrap" target="_blank">
+                <i class="fab fa-pinterest mr-3"></i>
+            </a>
+
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+                <i class="fab fa-github mr-3"></i>
+            </a>
+
+            <a href="http://codepen.io/mdbootstrap/" target="_blank">
+                <i class="fab fa-codepen mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> WOW.com </a>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+<!--    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>-->
+    <!-- Bootstrap tooltips -->
+<!--    <script type="text/javascript" src="js/popper.min.js"></script>-->
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script type="text/javascript" src="js/script3.js"></script>
+
+    
+    
+   
+    
+    
+   
+</body>
+
+</html>
